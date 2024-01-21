@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html{
+                background-color: black;
+            }
+            body{
+                margin: 2%;
+            }
+            img{
+                display:inline-block;
+                width: 30%
+            }
+            h1{
+                color:white;
+                font-size: 50px;
+                font-style: italic;
+                margin-bottom: 3%;
+            }
+            p{
+                color:white;
+            }
+            #grid{
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .list{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                padding-right: 2%;
+            }
+            .first{
+                font-style: italic;
+                margin: 1%;
+                padding: 8% 6%;
+                background-color: white;
+                text-align: center;
+                font-size: 40px;
+                font-weight: bold;
+                border-radius: 20px;
+            }
+            .second{
+                box-sizing: content-box;
+                fill:white;
+                color:black;
+                font-style: italic;
+                margin: 1%;
+                padding:15% 3%;
+                background-color: white;
+                font-size: 40px;
+                font-weight: bold;
+                border-radius: 20px;
+            }
+            .third{
+                box-sizing: content-box;
+                fill:white;
+                color:black;
+                font-style: italic;
+                margin: 1%;
+                padding:15% 4%;
+                background-color: white;
+                font-size: 40px;
+                font-weight: bold;
+                border-radius: 20px;
+            }
+
+            h2{
+                color:white;
+                font-size: 45px;
+                font-weight: bold;
+                font-style: italic;
+                margin:1%;
+            }
+            #signUp{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding:20% 0%;
+            }
+            input{
+                display: inline-block;
+                width: 350px;
+                height: 30px;
+                font-size: 17px;
+                border-radius: 40px;
+                margin:1%;
+                padding: 5px;
+                background-repeat: no-repeat;
+                text-indent: 50px;
+            }
+            .id{
+                background-size: 6%;
+                background-position: 3.8%;
+                background-image: url("login_id.png");
+            }
+            .password{
+                background-size: 10%;
+                background-position: 2%;
+                background-image: url("login_password.png");
+            }
+            .button{
+                display:inline;
+                background-color: orange;
+                color:white;
+                border-radius: 40px;
+                margin: 1%;
+                width: 150px;
+                height: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="grid">
+            <div>
+                <img src="likelion.png">
+                <h1>Like Lion</h1>
+                <p>우리는 '성장 의지를 가진 사람들을 돕기 위해' 존재합니다. 그리고 이들을 돕기 위한 가장 근본적이고 효과적인 방법은 교육이라고 생각합니다.</p>
+                <p>지금 바로 지원하세요!</p>
+                
+                <div class="list">
+                    <div class="first">
+                        Plan<br>&<br>Design
+                    </div>
+                    <div class="second">
+                        Frontend
+                    </div>
+                    <div class="third">
+                        Backend
+                    </div>
+                </div>
+            </div>
+            <div id="signUp">
+                <h2>LOGIN</h2>
+                <input type="text" placeholder="  ID" class="id">
+                <input type="password" placeholder="  PW" class="password">
+                <button type="submit" class="button">
+                    로그인 후 지원하기
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
